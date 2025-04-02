@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 80px; /* Adjust based on your header height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  
+  
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+  }
+  
+  .logo {
+    font-size: 2em;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+
+/* Hero Section Styling */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    padding-top: 100px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Flexbox Layout */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Text Section */
+.text {
+    flex: 1;  /* Takes available space */
+}
+
+.text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: blue;
+}
+
+.text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.text .btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* Image Section */
+.image {
+    flex: 1; /* Takes available space */
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+
+/* About Section */
+#about {
+    padding: 60px 10%;
+    margin-top: 40px;
+    
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for the About Section */
+#about .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* About Text */
+#about .container p {
+    flex: 1 1 45%; /* Allow it to grow and shrink */
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#about .container .skills {
+    flex: 1 1 45%; /* Same as text to ensure symmetry */
+    display: flex;
+    flex-direction: column;
+}
+
+#about .container .skills h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#about .container .skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .container .skills ul li {
+    margin: 10px 0;
+}
+
+
+
+
+
+/* Projects Section */
+#project {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#project h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Flexbox Layout */
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Project Box */
+.project {
+    background: rgb(208, 109, 109);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Box shadow added */
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: black;
+}
+
+/* Hover Effect */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Title */
+.project h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* View Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  .project img {
+    width: 100%; /* Make image responsive */
+    height: 180px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image fills the space properly */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+
+
+
+/* Education Section */
+#education {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#education h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Flexbox Layout */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Education Box */
+.education-item {
+    /* Education Section */
+#education {
+    padding: 50px 10%;
+    
+    text-align: center;
+}
+
+#education h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Flexbox Layout */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Education Box */
+
+.education-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+/* 
+
+
+/* Education Title */
+.education-item h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* CV Download Button */
+#education .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#education .btn:hover {
+    background: #0056b3;
+}
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Box shadow added */
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Title */
+.education-item h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* CV Download Button */
+#education .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#education .btn:hover {
+    background: #0056b3;
+}
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+    background: #111; /* Black background */
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* Contact Form Centering */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Form */
+#contact-form {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Form Labels */
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    color: white;
+}
+
+/* Placeholder Text Color */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Send Button */
+#contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    background: #0056b3;
+}
+
+
+
+footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 100px 20px ;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+     /* Hide menu by default on mobile */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: #333;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 40pxpx;
+    }
+  
+    nav ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    /* When the checkbox is checked, show the menu */
+    .menu-toggle:checked + .hamburger + #nav-links {
+      display: flex;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    /* Skills section comes below the intro */
+    #about .container .skills {
+        margin-top: 30px;
+    }
+
+    #home {
+        padding-top: 150px; /* Make it larger on mobile to avoid header overlap */
+      }
+}
+  
+
+  
+  /* outside the media query to ensure checkbox is always hidden */
+  .menu-toggle {
+    display: none;
+  }
+  
