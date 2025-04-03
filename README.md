@@ -42,6 +42,7 @@ Deployment
 
 The portfolio is hosted on GitHub Pages:
 🔗 Live Demo  https://mohamedbashir2093.github.io/Hackathon-portfolio\
+If this link is not working, copy it and paste it into the browser.
 
 
 
