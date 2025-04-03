@@ -5,7 +5,7 @@
 }
 
 html {
-    scroll-padding-top: 80px; /* Adjust based on your header height */
+    scroll-padding-top: 80px; 
 }
 
 body {
@@ -152,14 +152,14 @@ body {
 /* Container for the About Section */
 #about .container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     gap: 40px;
 }
 
 /* About Text */
 #about .container p {
-    flex: 1 1 45%; /* Allow it to grow and shrink */
+    flex: 1 1 45%; 
     line-height: 1.6;
 }
 
@@ -212,7 +212,7 @@ body {
     background: rgb(208, 109, 109);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Box shadow added */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
     max-width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -246,15 +246,13 @@ body {
     background-color: #0056b3;
   }
   .project img {
-    width: 100%; /* Make image responsive */
-    height: 180px; /* Set a fixed height */
-    object-fit: cover; /* Ensure image fills the space properly */
-    border-radius: 5px; /* Add rounded corners */
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 5px; 
     margin-bottom: 10px;
   }
   
-
-
 
 
 
@@ -281,60 +279,6 @@ body {
 
 /* Individual Education Box */
 .education-item {
-    /* Education Section */
-#education {
-    padding: 50px 10%;
-    
-    text-align: center;
-}
-
-#education h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-/* Flexbox Layout */
-.education-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Individual Education Box */
-
-.education-item {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-}
-/* 
-
-
-/* Education Title */
-.education-item h3 {
-    margin-bottom: 10px;
-    font-size: 22px;
-}
-
-/* CV Download Button */
-#education .btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-#education .btn:hover {
-    background: #0056b3;
-}
-
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Box shadow added */
@@ -376,9 +320,10 @@ body {
 
 
 
+
 /* Contact Section */
 #contact {
-    background: #111; /* Black background */
+    background: #111; 
     color: white;
     padding: 60px 10%;
     text-align: center;
@@ -449,7 +394,7 @@ footer {
     background-color: #222; /* Dark background */
     color: white;
     text-align: center;
-    padding: 100px 20px ;
+    padding: 50px 20px ;
     
 }
 
@@ -479,7 +424,7 @@ footer {
       background-color: #333;
       width: 100%;
       padding: 10px;
-      margin-bottom: 40pxpx;
+      margin-bottom: 40px;
     }
   
     nav ul li {
@@ -501,8 +446,8 @@ footer {
     }
 
     #about .container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     /* Skills section comes below the intro */
@@ -510,9 +455,9 @@ footer {
         margin-top: 30px;
     }
 
-    #home {
-        padding-top: 150px; /* Make it larger on mobile to avoid header overlap */
-      }
+    #home, #about, #project, #contact {
+        padding-top: 150px;
+    }
 }
   
 
